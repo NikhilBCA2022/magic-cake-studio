@@ -44,18 +44,64 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+// ---- Security headers ------------------------------------------------------
+// Added on every server-rendered response. Static files served directly by the
+// CDN do not pass through here, which is fine: these headers matter on HTML.
+const SECURITY_HEADERS: Record<string, string> = {
+  // Only ever use HTTPS for this site (1 year).
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+  // Stop browsers from guessing a file's type (blocks a class of XSS tricks).
+  "X-Content-Type-Options": "nosniff",
+  // Nobody else may put this site inside an <iframe> (clickjacking defence).
+  "X-Frame-Options": "DENY",
+  // Do not leak full page URLs to other sites.
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  // Switch off browser features the site never uses. geolocation stays ON for
+  // our own pages because the serviceability checker asks for GPS.
+  "Permissions-Policy": "geolocation=(self), camera=(), microphone=(), payment=(self), usb=()",
+  "Cross-Origin-Opener-Policy": "same-origin",
+  // REPORT-ONLY for now: the browser logs what it WOULD block but blocks nothing.
+  // Check the browser console after testing login, 3D, images; fix anything it
+  // flags; then rename this header to "Content-Security-Policy" to enforce it.
+  "Content-Security-Policy-Report-Only": [
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-inline'",
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "font-src 'self' data: https://fonts.gstatic.com",
+    "img-src 'self' data: blob: https:",
+    "media-src 'self' blob: https:",
+    "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
+    "frame-ancestors 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "object-src 'none'",
+  ].join("; "),
+};
+
+function withSecurityHeaders(response: Response): Response {
+  const headers = new Headers(response.headers);
+  for (const [name, value] of Object.entries(SECURITY_HEADERS)) headers.set(name, value);
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
-      return await normalizeCatastrophicSsrResponse(response);
+      return withSecurityHeaders(await normalizeCatastrophicSsrResponse(response));
     } catch (error) {
       console.error(error);
-      return new Response(renderErrorPage(), {
-        status: 500,
-        headers: { "content-type": "text/html; charset=utf-8" },
-      });
+      return withSecurityHeaders(
+        new Response(renderErrorPage(), {
+          status: 500,
+          headers: { "content-type": "text/html; charset=utf-8" },
+        }),
+      );
     }
   },
 };

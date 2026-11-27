@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, ShoppingBag, User, X } from "lucide-react";
-import logoAsset from "@/assets/logo.png.asset.json";
+import logoAsset from "@/assets/logo.png";
 import { useEffect, useState } from "react";
 import { useCart, cartCount } from "@/lib/cart-store";
 import { useAuth } from "@/lib/auth-context";
@@ -46,7 +46,7 @@ export function SiteHeader() {
         <div className="container-luxe flex h-20 items-center justify-between">
           <Link to="/" className="group flex items-center gap-2.5">
             <img
-              src={logoAsset.url}
+              src={logoAsset}
               alt="C & It's Magic logo"
               className="h-11 w-11 object-contain transition-transform duration-500 group-hover:rotate-6"
             />
@@ -145,7 +145,7 @@ export function SiteFooter() {
       <div className="container-luxe grid gap-14 py-20 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5">
-            <img src={logoAsset.url} alt="C & It's Magic logo" className="h-12 w-12 object-contain" loading="lazy" />
+            <img src={logoAsset} alt="C & It's Magic logo" className="h-12 w-12 object-contain" loading="lazy" />
             <span className="font-display text-2xl text-cream">
               C &amp; It's <span className="gold-text italic">Magic</span>
             </span>

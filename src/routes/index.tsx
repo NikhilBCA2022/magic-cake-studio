@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 import { ArrowRight, ChefHat, Play, Sparkles, Truck, Clock, MapPin, Star } from "lucide-react";
 import heroImg from "@/assets/hero-cake.jpg";
 // Category tile photos — real menu shots so each tile tempts a tap.
-import tileSeasonal from "@/assets/mango-cake.jpg.asset.json";
-import tileCakes from "@/assets/belgian-dark-truffle.jpg.asset.json";
+import tileSeasonal from "@/assets/mango-cake.jpg";
+import tileCakes from "@/assets/belgian-dark-truffle.jpg";
 import tileIceCream from "@/assets/ic-dbc.jpg";
 import tileCookies from "@/assets/ck-chocochip.jpg";
-import tileCupcakes from "@/assets/red-velvet-cupcake.jpg.asset.json";
+import tileCupcakes from "@/assets/red-velvet-cupcake.jpg";
 import tileDesserts from "@/assets/ds-choco-lava.jpg";
 import tilePizza from "@/assets/pz-margherita.jpg";
 import tileBurgers from "@/assets/dish-burger.jpg";
 import tileMainCourse from "@/assets/dish-biryani.jpg";
 import tileRolls from "@/assets/dish-roll.jpg";
-import tileStreetFood from "@/assets/kurkure-momos.jpg.asset.json";
-import tileSnacks from "@/assets/samosa.jpg.asset.json";
+import tileStreetFood from "@/assets/kurkure-momos.jpg";
+import tileSnacks from "@/assets/samosa.jpg";
 import tileMilkshakes from "@/assets/milkshakes/rich-chocolate.jpg";
 import tileHealthy from "@/assets/healthy/no-maida-hero.jpg";
 import craftImg from "@/assets/craft-cake.jpg";
@@ -83,26 +83,26 @@ function OfferStrip() {
 /** Compact category tiles for fast navigation — no dishes, just doors into the menu. */
 function CategoryTiles() {
   const tileImg: Record<string, string> = {
-    "seasonal-special": tileSeasonal.url,
-    cakes: tileCakes.url,
+    "seasonal-special": tileSeasonal,
+    cakes: tileCakes,
     "ice-cream": tileIceCream,
     cookies: tileCookies,
-    cupcakes: tileCupcakes.url,
+    cupcakes: tileCupcakes,
     desserts: tileDesserts,
     pizza: tilePizza,
     "fried-chicken": cfcCloseupImg,
     burgers: tileBurgers,
     "main-course": tileMainCourse,
     rolls: tileRolls,
-    "street-food": tileStreetFood.url,
-    snacks: tileSnacks.url,
+    "street-food": tileStreetFood,
+    snacks: tileSnacks,
     Milkshakes: tileMilkshakes,
     "No Maida No Sugar": tileHealthy,
   };
   const tiles = [
-    ...CATEGORIES.map((c) => ({ label: c.name, tagline: c.tagline, to: "/menu/$category", params: { category: c.slug } })),
-    { label: "Milkshakes", tagline: "Blended fresh to order", to: "/milkshakes", params: undefined },
-    { label: "No Maida No Sugar", tagline: "Guilt-free indulgence", to: "/no-maida-no-sugar", params: undefined },
+    ...CATEGORIES.map((c) => ({ key: c.slug, label: c.name, tagline: c.tagline, to: "/menu/$category", params: { category: c.slug } })),
+    { key: "Milkshakes", label: "Milkshakes", tagline: "Blended fresh to order", to: "/milkshakes", params: undefined },
+    { key: "No Maida No Sugar", label: "No Maida No Sugar", tagline: "Guilt-free indulgence", to: "/no-maida-no-sugar", params: undefined },
   ];
   return (
     <section className="container-luxe py-10 md:py-16">
@@ -124,7 +124,7 @@ function CategoryTiles() {
               className="group relative flex h-24 min-w-0 flex-col justify-end overflow-hidden rounded-lg border border-border/60 bg-card/60 p-2 transition-all hover:border-primary/50 hover:shadow-luxe sm:h-32 sm:rounded-xl sm:p-3 md:h-44 md:rounded-2xl md:p-4"
             >
               <img
-                src={tileImg[t.label]}
+                src={tileImg[t.key]}
                 alt={t.label}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"

@@ -3,29 +3,29 @@ import wings from "@/assets/dish-wings.jpg";
 import roll from "@/assets/dish-roll.jpg";
 import fries from "@/assets/dish-fries.jpg";
 import paneerPuffImg from "@/assets/paneer-puff.jpg";
-import popcornChickenAsset from "@/assets/popcorn-chicken.jpg.asset.json";
-import bomboloniAsset from "@/assets/bomboloni.jpg.asset.json";
-import gulabJamunAsset from "@/assets/gulab-jamun.jpg.asset.json";
-import tiramisuAsset from "@/assets/tiramisu.jpg.asset.json";
-import tresLechesAsset from "@/assets/tres-leches.jpg.asset.json";
-import vanillaCupcakeAsset from "@/assets/vanilla-cupcake.jpg.asset.json";
-import brownieCupcakeAsset from "@/assets/brownie-cupcake.jpg.asset.json";
-import redVelvetCupcakeAsset from "@/assets/red-velvet-cupcake.jpg.asset.json";
-import biscoffOverloadAsset from "@/assets/biscoff-overload.jpg.asset.json";
-import rasmalaiFusionAsset from "@/assets/rasmalai-fusion.jpg.asset.json";
-import blueberryCheesecakeAsset from "@/assets/blueberry-cheesecake.jpg.asset.json";
-import blackForestAsset from "@/assets/black-forest-cake.jpg.asset.json";
-import belgianTruffleAsset from "@/assets/belgian-dark-truffle.jpg.asset.json";
-import kurkureMomosAsset from "@/assets/kurkure-momos.jpg.asset.json";
-import eggRiceAsset from "@/assets/egg-rice.jpg.asset.json";
-import londonChocolateAsset from "@/assets/landon-chocholate-cake.jpg.asset.json";
-import mangoCakeAsset from "@/assets/mango-cake.jpg.asset.json";
-import redVelvetCakeAsset from "@/assets/red-velvet-cake.jpg.asset.json";
-import jamunCakeAsset from "@/assets/jamun-cake.jpg.asset.json";
-import ramenBowlAsset from "@/assets/ramen-bowl.jpg.asset.json";
-import strawberryCakeAsset from "@/assets/strawberry-cake.jpg.asset.json";
-import pineappleCakeAsset from "@/assets/pineapple-cake.jpg.asset.json";
-import fruitCakeAsset from "@/assets/fruit-cake.jpg.asset.json";
+import popcornChickenAsset from "@/assets/popcorn-chicken.jpg";
+import bomboloniAsset from "@/assets/bomboloni.jpg";
+import gulabJamunAsset from "@/assets/gulab-jamun.jpg";
+import tiramisuAsset from "@/assets/tiramisu.jpg";
+import tresLechesAsset from "@/assets/tres-leches.jpg";
+import vanillaCupcakeAsset from "@/assets/vanilla-cupcake.jpg";
+import brownieCupcakeAsset from "@/assets/brownie-cupcake.jpg";
+import redVelvetCupcakeAsset from "@/assets/red-velvet-cupcake.jpg";
+import biscoffOverloadAsset from "@/assets/biscoff-overload.jpg";
+import rasmalaiFusionAsset from "@/assets/rasmalai-fusion.jpg";
+import blueberryCheesecakeAsset from "@/assets/blueberry-cheesecake.jpg";
+import blackForestAsset from "@/assets/black-forest-cake.jpg";
+import belgianTruffleAsset from "@/assets/belgian-dark-truffle.jpg";
+import kurkureMomosAsset from "@/assets/kurkure-momos.jpg";
+import eggRiceAsset from "@/assets/egg-rice.jpg";
+import londonChocolateAsset from "@/assets/landon-chocholate-cake.jpg";
+import mangoCakeAsset from "@/assets/mango-cake.jpg";
+import redVelvetCakeAsset from "@/assets/red-velvet-cake.jpg";
+import jamunCakeAsset from "@/assets/jamun-cake.jpg";
+import ramenBowlAsset from "@/assets/ramen-bowl.jpg";
+import strawberryCakeAsset from "@/assets/strawberry-cake.jpg";
+import pineappleCakeAsset from "@/assets/pineapple-cake.jpg";
+import fruitCakeAsset from "@/assets/fruit-cake.jpg";
 import icMango from "@/assets/ic-mango.jpg";
 import icStrawberry from "@/assets/ic-strawberry.jpg";
 import icJackfruit from "@/assets/ic-jackfruit.jpg";
@@ -70,11 +70,11 @@ import ckMultigrain from "@/assets/ck-multigrain.jpg";
 import ckPeanutbutter from "@/assets/ck-peanutbutter.jpg";
 import ckSeedmix from "@/assets/ck-seedmix.jpg";
 import ckDryfruit from "@/assets/ck-dryfruit.jpg";
-import samosaAsset from "@/assets/samosa.jpg.asset.json";
-import biryaniAsset from "@/assets/hyderabadi-dum-biryani.png.asset.json";
-import pepperChickenAsset from "@/assets/malabar-pepper-chicken.png.asset.json";
-import whiteForestAsset from "@/assets/white-forest-cake.jpg.asset.json";
-import cfcBucketAsset from "@/assets/cfc-fried-bucket.png.asset.json";
+import samosaAsset from "@/assets/samosa.jpg";
+import biryaniAsset from "@/assets/hyderabadi-dum-biryani.png";
+import pepperChickenAsset from "@/assets/malabar-pepper-chicken.png";
+import whiteForestAsset from "@/assets/white-forest-cake.jpg";
+import cfcBucketAsset from "@/assets/cfc-fried-bucket.png";
 import cfcCloseup from "@/assets/cfc-closeup.jpg";
 import dsAppleCrumble from "@/assets/ds-apple-crumble.jpg";
 import dsChocoLava from "@/assets/ds-choco-lava.jpg";
@@ -89,34 +89,34 @@ import pzChicken from "@/assets/pz-chicken.jpg";
 
 
 
-const popcornChicken = popcornChickenAsset.url;
-const bomboloni = bomboloniAsset.url;
-const gulabJamun = gulabJamunAsset.url;
-const tiramisu = tiramisuAsset.url;
-const tres = tresLechesAsset.url;
-const vanillaCupcake = vanillaCupcakeAsset.url;
-const brownieCupcake = brownieCupcakeAsset.url;
-const redVelvetCupcake = redVelvetCupcakeAsset.url;
-const biscoffOverload = biscoffOverloadAsset.url;
-const rasmalaiFusion = rasmalaiFusionAsset.url;
-const blueberryCheesecake = blueberryCheesecakeAsset.url;
-const blackForest = blackForestAsset.url;
-const belgianTruffle = belgianTruffleAsset.url;
-const kurkureMomosImg = kurkureMomosAsset.url;
-const eggRiceImg = eggRiceAsset.url;
-const londonChocolate = londonChocolateAsset.url;
-const mangoCake = mangoCakeAsset.url;
-const redVelvetCake = redVelvetCakeAsset.url;
-const jamunCake = jamunCakeAsset.url;
-const ramenBowl = ramenBowlAsset.url;
-const strawberryCake = strawberryCakeAsset.url;
-const pineappleCake = pineappleCakeAsset.url;
-const fruitCake = fruitCakeAsset.url;
-const samosaImg = samosaAsset.url;
-const biryani = biryaniAsset.url;
-const pepperChickenImg = pepperChickenAsset.url;
-export const whiteForestImg = whiteForestAsset.url;
-export const cfcBucketImg = cfcBucketAsset.url;
+const popcornChicken = popcornChickenAsset;
+const bomboloni = bomboloniAsset;
+const gulabJamun = gulabJamunAsset;
+const tiramisu = tiramisuAsset;
+const tres = tresLechesAsset;
+const vanillaCupcake = vanillaCupcakeAsset;
+const brownieCupcake = brownieCupcakeAsset;
+const redVelvetCupcake = redVelvetCupcakeAsset;
+const biscoffOverload = biscoffOverloadAsset;
+const rasmalaiFusion = rasmalaiFusionAsset;
+const blueberryCheesecake = blueberryCheesecakeAsset;
+const blackForest = blackForestAsset;
+const belgianTruffle = belgianTruffleAsset;
+const kurkureMomosImg = kurkureMomosAsset;
+const eggRiceImg = eggRiceAsset;
+const londonChocolate = londonChocolateAsset;
+const mangoCake = mangoCakeAsset;
+const redVelvetCake = redVelvetCakeAsset;
+const jamunCake = jamunCakeAsset;
+const ramenBowl = ramenBowlAsset;
+const strawberryCake = strawberryCakeAsset;
+const pineappleCake = pineappleCakeAsset;
+const fruitCake = fruitCakeAsset;
+const samosaImg = samosaAsset;
+const biryani = biryaniAsset;
+const pepperChickenImg = pepperChickenAsset;
+export const whiteForestImg = whiteForestAsset;
+export const cfcBucketImg = cfcBucketAsset;
 export const cfcCloseupImg = cfcCloseup;
 
 export type StockStatus = "in" | "low" | "out";
@@ -197,7 +197,7 @@ export const PRODUCTS: Product[] = [
   { slug: "brownie-cake", name: "Fudge Brownie Cake", category: "cakes", price: 429, description: "Dense fudge brownie layers, molten ganache, toasted walnut crumb.", image: cakeBrownie, veg: true, prepMins: 1440, calories: 470, ingredients: ["Dark chocolate", "Butter", "Walnuts", "Ganache"] },
   { slug: "kunafa-cake", name: "Kunafa Pistachio Cake", category: "cakes", price: 549, description: "Crisp kataifi threads, pistachio cream, rose-scented syrup — Middle Eastern opulence.", image: cakeKunafa, veg: true, chefPick: true, prepMins: 1440, calories: 480, ingredients: ["Kataifi", "Pistachio cream", "Rose syrup", "Ghee", "Cheese"] },
   { slug: "tropical-cake", name: "Tropical Pineapple Lychee Cake", category: "cakes", price: 419, description: "Pineapple compote, lychee cream and glazed cherries on airy vanilla sponge.", image: cakePineappleLychee, veg: true, prepMins: 1440, calories: 360, ingredients: ["Pineapple", "Lychee", "Cherries", "Whipped cream", "Vanilla sponge"] },
-  { slug: "white-forest-cake", name: "White Forest Cake", category: "cakes", price: 369, badge: "NEW", description: "The classic Black Forest, reimagined in white — layers of soft vanilla sponge, whipped cream, and delicate white chocolate shavings, with a hint of cherry.", image: whiteForestAsset.url, veg: true, prepMins: 1440, calories: 370, ingredients: ["Vanilla sponge", "Whipped cream", "White chocolate shavings", "Cherries"] },
+  { slug: "white-forest-cake", name: "White Forest Cake", category: "cakes", price: 369, badge: "NEW", description: "The classic Black Forest, reimagined in white — layers of soft vanilla sponge, whipped cream, and delicate white chocolate shavings, with a hint of cherry.", image: whiteForestAsset, veg: true, prepMins: 1440, calories: 370, ingredients: ["Vanilla sponge", "Whipped cream", "White chocolate shavings", "Cherries"] },
 
 
   { slug: "ny-cheesecake", name: "New York Classic Cheesecake", category: "cakes", price: 899, unitLabel: "1 kg", badge: "NEW", description: "Tall, dense and impossibly creamy — slow-baked cream cheese on a buttered graham crust.", image: cakeNyCheesecake, veg: true, chefPick: true, prepMins: 1440, calories: 450, ingredients: ["Cream cheese", "Graham crust", "Eggs", "Vanilla", "Cream"] },
@@ -228,7 +228,7 @@ export const PRODUCTS: Product[] = [
   { slug: "fire-wings", name: "Golden Fire Wings", category: "fried-chicken", price: 349, description: "Twice-fried wings tossed in house-smoked gochujang glaze.", image: wings, veg: false, bestSeller: true, prepMins: 25, calories: 480, ingredients: ["Chicken wings", "Gochujang", "Garlic", "Honey"] },
   { slug: "popcorn-chicken", name: "Popcorn Chicken", category: "fried-chicken", price: 249, description: "Bite-sized, buttermilk brined, spiced crust.", image: popcornChicken, veg: false, prepMins: 20, calories: 420, ingredients: ["Chicken breast", "Buttermilk", "Spices", "Flour"] },
   { slug: "crispy-leg-pieces", name: "Crispy Leg Pieces", category: "fried-chicken", price: 79, description: "Whole leg pieces, 24-hour brine, shatter crust. Per piece.", image: cfcCloseup, veg: false, chefPick: true, prepMins: 25, calories: 510, ingredients: ["Chicken leg", "Buttermilk", "Herbs", "Panko"] },
-  { slug: "cfc-fried-bucket", name: "CFC Fried Bucket", category: "fried-chicken", price: 599, badge: "NEW", landing: "/cfc-fried-bucket", description: "8 pieces of our signature hot & crispy fried chicken, hand-breaded and cooked to golden perfection — a bucket built for sharing.", image: cfcBucketAsset.url, veg: false, bestSeller: true, prepMins: 30, calories: 1800, ingredients: ["Chicken", "Buttermilk", "House seasoning blend", "Flour"] },
+  { slug: "cfc-fried-bucket", name: "CFC Fried Bucket", category: "fried-chicken", price: 599, badge: "NEW", landing: "/cfc-fried-bucket", description: "8 pieces of our signature hot & crispy fried chicken, hand-breaded and cooked to golden perfection — a bucket built for sharing.", image: cfcBucketAsset, veg: false, bestSeller: true, prepMins: 30, calories: 1800, ingredients: ["Chicken", "Buttermilk", "House seasoning blend", "Flour"] },
 
   // Burgers
   { slug: "signature-crispy", name: "Signature Crispy Burger", category: "burgers", price: 89, description: "Buttermilk-fried chicken, house pickles, gold-toasted brioche.", image: burger, veg: false, bestSeller: true, prepMins: 20, calories: 620, ingredients: ["Chicken", "Brioche", "Pickles", "House mayo", "Lettuce"] },
